@@ -9,129 +9,270 @@
 </head>
 
 <body>
-    <h1>Terminal commands - Cheatsheet</h1>
-    <ol>
-        <li>
-            <h2>Print Working Directory</h2>
-            <p><b>Command:</b> <i>pwd</i></p>
-            <p><b>Funktion:</b> Gibt das aktuelle Arbeitsverzeichnis aus.</p>
-            <img src="assets/img/pwd.png" alt="">
-        </li>
-        <li>
-            <h2>Listing Directory</h2>
-            <p><b>Command:</b> <i>ls</i></p>
-            <p><b>Funktion:</b> Gibt den Inhalt des aktuellen Verzeichnises aus.</p>
-            <img src="assets/img/ls.png" alt="">
-            <ul>
+    <h1>Commands - Cheatsheet</h1>
+    <nav><a href="#" class="collapse">Collapse</a>
+    </nav>
+    <div class="expand">
+        <a href="#hide1" class="hide" id="hide1">+</a>
+        <a href="#show1" class="show" id="show1">-</a>
+        <div class="commands">
+            <h2>Terminal Commands</h2>
+        </div>
+        <div class="list">
+            <ol>
                 <li>
-                    <h3>Zusatz: -1</h3>
-                    <p><b>Command:</b> <i>ls -1</i></p>
-                    <p><b>Funktion:</b> Gibt den Inhalt des aktuellen Verzeichnises in nur einer Spalte aus.</p>
-                    <img src="assets/img/ls_-1.png" alt="">
+                    <h2>Print Working Directory</h2>
+                    <p><b>Command:</b> <i>pwd</i></p>
+                    <p><b>What it does:</b> Gibt das aktuelle Arbeitsverzeichnis aus.</p>
+                    <img src="assets/img/pwd.png" alt="">
                 </li>
                 <li>
-                    <h3>Zusatz: -l</h3>
-                    <p><b>Command:</b> <i>ls -l</i></p>
-                    <p><b>Funktion:</b> Gibt den Inhalt des aktuellen Verzeichnises in einem breiten Format aus.
+                    <h2>Listing Directory</h2>
+                    <p><b>Command:</b> <i>ls</i></p>
+                    <p><b>What it does:</b> Gibt den Inhalt des aktuellen Verzeichnises aus.</p>
+                    <img src="assets/img/ls.png" alt="">
+                    <ul>
+                        <li>
+                            <h3>Zusatz: -1</h3>
+                            <p><b>Command:</b> <i>ls -1</i></p>
+                            <p><b>What it does:</b> Gibt den Inhalt des aktuellen Verzeichnises in nur einer Spalte aus.
+                            </p>
+                            <img src="assets/img/ls_-1.png" alt="">
+                        </li>
+                        <li>
+                            <h3>Zusatz: -l</h3>
+                            <p><b>Command:</b> <i>ls -l</i></p>
+                            <p><b>What it does:</b> Gibt den Inhalt des aktuellen Verzeichnises in einem breiten Format
+                                aus.
+                            </p>
+                            <img src="assets/img/ls_-l.png" alt="">
+                        </li>
+                        <li>
+                            <h3>Zusatz: -a</h3>
+                            <p><b>Command:</b> <i>ls -a</i></p>
+                            <p><b>What it does:</b> Gibt den Inhalt des aktuellen Verzeichnises inklusive versteckter
+                                Dateien
+                                aus.
+                            </p>
+                            <img src="assets/img/ls_-a.png" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Clear</h2>
+                    <p><b>Command:</b> <i>clear</i></p>
+                    <p><b>What it does:</b> Leert den Terminal-Bildschirm von allen vorherigen Befehle</p>
+                    <img src="assets/img/clear.png" alt="">
+                </li>
+                <li>
+                    <h2>Change Directory</h2>
+                    <p><b>Command:</b> <i>cd</i></p>
+                    <p><b>What it does:</b> Änderung des Arbeitsverzeichnis.</p>
+                    <img src="assets/img/cd.png" alt="">
+                    <ul>
+                        <li>
+                            <h3>Zusatz: ..</h3>
+                            <p><b>Command:</b> <i>cd ..</i></p>
+                            <p><b>What it does:</b> Gehe zum übergeodneten Verzeichnis.</p>
+                            <img src="assets/img/cd_...png" alt="">
+                        </li>
+                        <li>
+                            <h3>Zusatz: ~</h3>
+                            <p><b>Command:</b> <i>cd ~</i></p>
+                            <p><b>What it does:</b> Gehe zum Benutzer-Verzeichnis.</p>
+                            <img src="assets/img/cd__.png" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Make Directory</h2>
+                    <p><b>Command:</b> <i>mkdir</i></p>
+                    <p><b>What it does:</b> Erstelle ein neues Verzeichnis.</p>
+                    <img src="assets/img/mkdir.png" alt="">
+                </li>
+                <li>
+                    <h2>Touch</h2>
+                    <p><b>Command:</b> <i>touch</i></p>
+                    <p><b>What it does:</b> Erstelle eine Datei.</p>
+                    <img src="assets/img/touch.png" alt="">
+                </li>
+                <li>
+                    <h2>Move</h2>
+                    <p><b>Command:</b> <i>mv</i></p>
+                    <p><b>What it does:</b> Verschiebt eine Datei.</p>
+                    <img src="assets/img/mv.png" alt="">
+                </li>
+                <li>
+                    <h2>Copy</h2>
+                    <p><b>Command:</b> <i>cp</i></p>
+                    <p><b>What it does:</b> Kopiert eine Datei.</p>
+                    <img src="assets/img/cp.png" alt="">
+                </li>
+                <li>
+                    <h2>Remove</h2>
+                    <p><b>Command:</b> <i>rm</i></p>
+                    <p><b>What it does:</b> Löscht eine Datei.</p>
+                    <img src="assets/img/rm.png" alt="">
+                    <ul>
+                        <li>
+                            <h3>Zusatz: -r</h3>
+                            <p><b>Command:</b> <i>rm -r</i></p>
+                            <p><b>What it does:</b> Löscht ein Verzeichnis und all seine Inhalte.</p>
+                            <img src="assets/img/rm_-r.png" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Remove Directory</h2>
+                    <p><b>Command:</b> <i>rmdir</i></p>
+                    <p><b>What it does:</b> Löscht ein leeres Verzeichnis.</p>
+                    <img src="assets/img/rmdir.png" alt="">
+                </li>
+                <li>
+                    <h2>Manual</h2>
+                    <p><b>Command:</b> <i>man</i></p>
+                    <p><b>What it does:</b> Öffnet ein Handbuch zu Befehlen.</p>
+                    <p><b></b></p>
+                    <img src="assets/img/man.png" alt="">
+                    <img src="assets/img/man_ls.png" alt="">
+                </li>
+                <li>
+                    <h2>Calendar</h2>
+                    <p><b>Command:</b> <i>cal</i></p>
+                    <p><b>What it does:</b> Zeigt einen Kalender für den aktuellen Monat, der aktuelle Tag ist dabei
+                        markiert.</p>
+                    <p><b></b></p>
+                    <img src="assets/img/cal.png" alt="">
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="expand">
+        <a href="#hide2" class="hide" id="hide2">+</a>
+        <a href="#show2" class="show" id="show2">-</a>
+        <div class="commands">
+            <h2>Git Commands</h2>
+        </div>
+        <div class="list">
+            <ol>
+                <li>
+                    <h2>Initialize</h2>
+                    <p><b>Command:</b> <i>git init</i></p>
+                    <p><b>What it does:</b> Initializes a new local repository.</p>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <h2>Add</h2>
+                    <p><b>Command:</b> <i>git add</i></p>
+                    <p><b>What it does:</b> Adds everything to the local repository.</p>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <h2>Commit</h2>
+                    <p><b>Command:</b> <i>git commit</i></p>
+                    <p><b>What it does:</b> Records the file permanently in the version history.</p>
+                    <img src="" alt="">
+                    <ul>
+                        <li>
+                            <h3>Zusatz: -m "comment here"</h3>
+                            <p><b>Command:</b> <i>git commit -m "comment here"</i></p>
+                            <p><b>What it does:</b> Records the file permanently in the version history with a
+                                discriptive
+                                comment.</p>
+                            <img src="" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Status</h2>
+                    <p><b>Command:</b> <i>git status</i></p>
+                    <p><b>What it does:</b> Lists all the files that have to be added/committed.</p>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <h2>Differnce</h2>
+                    <p><b>Command:</b> <i>git diff</i></p>
+                    <p><b>What it does:</b> Shows the file differences which are not yet staged.</p>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <h2>Log</h2>
+                    <p><b>Command:</b> <i>git log</i></p>
+                    <p><b>What it does:</b> List the version history for the current branch.</p>
+                    <img src="" alt="">
+                    <ul>
+                        <li>
+                            <h3>Zusatz: --oneline</h3>
+                            <p><b>Command:</b> <i>git log --oneline</i></p>
+                            <p><b>What it does:</b> List the version history for the current branch in a more condensed
+                                way.
+                            </p>
+                            <img src="" alt="">
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <h2>Branch</h2>
+                    <p><b>Command:</b> <i>git branch</i></p>
+                    <p><b>What it does:</b> Lists all the local branches in the current repository.</p>
+                    <img src="" alt="">
+                    <ul>
+                        <li>
+                            <h3>Zusatz: -a</h3>
+                            <p><b>Command:</b> <i>git branch -a</i></p>
+                            <p><b>What it does:</b> Lists all the local branches.</p>
+                            <img src="" alt="">
+                        </li>
+                        <li>
+                            <h3>Zusatz: "branch_name"</h3>
+                            <p><b>Command:</b> <i>git branch "branch_name"</i></p>
+                            <p><b>What it does:</b> Creates a new branch.</p>
+                            <img src="" alt="">
+                        </li>
+                        <li>
+                            <h3>Zusatz: -d "branch_name"</h3>
+                            <p><b>Command:</b> <i>git branch -d "branch_name"</i></p>
+                            <p><b>What it does:</b> Deletes the branch.</p>
+                            <img src="" alt="">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Checkout</h2>
+                    <p><b>Command:</b> <i>git checkout "branch_name"</i></p>
+                    <p><b>What it does:</b> Switch from one branch to another.</p>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <h2>Merge</h2>
+                    <p><b>Command:</b> <i>git merge</i></p>
+                    <p><b>What it does:</b> Merges the specified branch’s history into the current branch.</p>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <h2>Remote</h2>
+                    <p><b>Command:</b> <i>git remote</i></p>
+                    <p><b>What it does:</b> Connect the local repository to the remote server.</p>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <h2>Push</h2>
+                    <p><b>Command:</b> <i>git push</i></p>
+                    <p><b>What it does:</b> Sends the committed changes to your remote repository.</p>
+                    <img src="" alt="">
+                </li>
+                <li>
+                    <h2>Pull</h2>
+                    <p><b>Command:</b> <i>git pull</i></p>
+                    <p><b>What it does:</b> Fetches and merges changes on the remote server to your working directory.
                     </p>
-                    <img src="assets/img/ls_-l.png" alt="">
+                    <img src="" alt="">
                 </li>
-                <li>
-                    <h3>Zusatz: -a</h3>
-                    <p><b>Command:</b> <i>ls -a</i></p>
-                    <p><b>Funktion:</b> Gibt den Inhalt des aktuellen Verzeichnises inklusive versteckter Dateien
-                        aus.
-                    </p>
-                    <img src="assets/img/ls_-a.png" alt="">
-                </li>
-            </ul>
-        </li>
-        <li>
-            <h2>Clear</h2>
-            <p><b>Command:</b> <i>clear</i></p>
-            <p><b>Funktion:</b> Leert den Terminal-Bildschirm von allen vorherigen Befehle</p>
-            <img src="assets/img/clear.png" alt="">
-        </li>
-        <li>
-            <h2>Change Directory</h2>
-            <p><b>Command:</b> <i>cd</i></p>
-            <p><b>Funktion:</b> Änderung des Arbeitsverzeichnis.</p>
-            <img src="assets/img/cd.png" alt="">
-            <ul>
-                <li>
-                    <h3>Zusatz: ..</h3>
-                    <p><b>Command:</b> <i>cd ..</i></p>
-                    <p><b>Funktion:</b> Gehe zum übergeodneten Verzeichnis.</p>
-                    <img src="assets/img/cd_...png" alt="">
-                </li>
-                <li>
-                    <h3>Zusatz: ~</h3>
-                    <p><b>Command:</b> <i>cd ~</i></p>
-                    <p><b>Funktion:</b> Gehe zum Benutzer-Verzeichnis.</p>
-                    <img src="assets/img/cd__.png" alt="">
-                </li>
-            </ul>
-        </li>
-        <li>
-            <h2>Make Directory</h2>
-            <p><b>Command:</b> <i>mkdir</i></p>
-            <p><b>Funktion:</b> Erstelle ein neues Verzeichnis.</p>
-            <img src="assets/img/mkdir.png" alt="">
-        </li>
-        <li>
-            <h2>Touch</h2>
-            <p><b>Command:</b> <i>touch</i></p>
-            <p><b>Funktion:</b> Erstelle eine Datei.</p>
-            <img src="assets/img/touch.png" alt="">
-        </li>
-        <li>
-            <h2>Move</h2>
-            <p><b>Command:</b> <i>mv</i></p>
-            <p><b>Funktion:</b> Verschiebt eine Datei.</p>
-            <img src="assets/img/mv.png" alt="">
-        </li>
-        <li>
-            <h2>Copy</h2>
-            <p><b>Command:</b> <i>cp</i></p>
-            <p><b>Funktion:</b> Kopiert eine Datei.</p>
-            <img src="assets/img/cp.png" alt="">
-        </li>
-        <li>
-            <h2>Remove</h2>
-            <p><b>Command:</b> <i>rm</i></p>
-            <p><b>Funktion:</b> Löscht eine Datei.</p>
-            <img src="assets/img/rm.png" alt="">
-            <ul>
-                <li>
-                    <h3>Zusatz: -r</h3>
-                    <p><b>Command:</b> <i>rm -r</i></p>
-                    <p><b>Funktion:</b> Löscht ein Verzeichnis und all seine Inhalte.</p>
-                    <img src="assets/img/rm_-r.png" alt="">
-                </li>
-            </ul>
-        </li>
-        <li>
-            <h2>Remove Directory</h2>
-            <p><b>Command:</b> <i>rmdir</i></p>
-            <p><b>Funktion:</b> Löscht ein leeres Verzeichnis.</p>
-            <img src="assets/img/rmdir.png" alt="">
-        </li>
-        <li>
-            <h2>Manual</h2>
-            <p><b>Command:</b> <i>man</i></p>
-            <p><b>Funktion:</b> Öffnet ein Handbuch zu Befehlen.</p>
-            <p><b></b></p>
-            <img src="assets/img/man.png" alt="">
-            <img src="assets/img/man_ls.png" alt="">
-        </li>
-        <li>
-            <h2>Calendar</h2>
-            <p><b>Command:</b> <i>cal</i></p>
-            <p><b>Funktion:</b> Zeigt einen Kalender für den aktuellen Monat, der aktuelle Tag ist dabei markiert.</p>
-            <p><b></b></p>
-            <img src="assets/img/cal.png" alt="">
-        </li>
-    </ol>
+            </ol>
+        </div>
+    </div>
 </body>
 
 </html>

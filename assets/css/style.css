@@ -14,6 +14,27 @@ img:hover{
     transform: scale(1.5);
 }
 
+.collapse{
+    width: 75px;
+    height: 20px;
+    background: #666;
+    padding: 25px;
+    text-align: center;
+    border-radius: 25px 0 0 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    opacity: 80%;
+}
+
+.collapse:hover {
+    background: #999999;
+    font-size: 1.3em;
+}
+
 ol{
     margin: 0 0 1.5em;
     padding: 0;
@@ -41,16 +62,21 @@ ol>li:before{
 
 h1{
     font-style: italic;
-    text-align: center;
     font-size: 4em;
-    padding: 50px;
+    padding: 50px 0 100px 400px;
 }
 
 h2{
     display: inline-block;
     font-size: 2em;
     padding-left: 1em;
+
 }
+
+div>h2{
+    margin: 0;
+}
+
 h3{
     display: inline-block;
     font-size: 1.5em;
@@ -59,4 +85,66 @@ h3{
 
 p{
     font-size: 1.4em;
+}
+
+.expand{
+    padding: 20px 0 0;
+    border-bottom: 1px solid #00000088;
+}
+
+.list {
+    display: none; 
+    height: auto;
+    margin: 0;
+}
+.show {
+    display: none; 
+}
+.hide:target + .show {
+    display: inline; 
+}
+.hide:target {
+    display: none; 
+}
+.hide:target ~ .list {
+    display: inline; 
+}
+
+/*style the (+) and (-) */
+.hide, .show {
+    /* design */
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 25px;
+    color: #fff;
+    text-shadow: 0 1px 0 #666;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 1px 1px 2px #000;
+    background: #cccccc;
+    opacity: .95;
+    /* position */
+    margin-right: 0;
+    float: left;
+    margin-bottom: 25px;
+}
+
+
+.hide:hover, .show:hover {
+    /* design */
+    color: #eee;
+    text-shadow: 0 0 1px #666;
+    text-decoration: none;
+    box-shadow: 0 0 4px #222 inset;
+    opacity: 1;
+    /* position */
+    margin-bottom: 25px;
+}
+
+.commands {
+    width: 90%;
+    padding-left: 20px;
+    font-style: italic;
+    margin-bottom: 25px;
 }
